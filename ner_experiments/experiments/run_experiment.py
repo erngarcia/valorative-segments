@@ -1,18 +1,24 @@
 import torch
 import yaml
 import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from models import BiLSTM, BiLSTM_CRF, BiLSTM_Attention
 from preprocessing.dataset import NERDataset
 from experiments.train import NERTrainer
-from configs.configs import Config
+from experiments.configs.configs import Config
+
+
+
+
 
 def load_config(config_path):
     with open(config_path, "r") as file:
         return yaml.safe_load(file)
 
 def run_experiment(params, experiment_number):
-
-    
     # Load the YAML config
     config_path = os.path.join(os.path.dirname(__file__), "configs", "base.yaml")
     config_dict = load_config(config_path)
@@ -54,4 +60,3 @@ def run_experiment(params, experiment_number):
             device=device
         )
         results = trainer.run()
-

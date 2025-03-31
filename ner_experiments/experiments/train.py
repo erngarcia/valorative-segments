@@ -3,12 +3,13 @@ from tqdm import tqdm
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.nn.utils.rnn import pad_sequence
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, classification_report
 from datetime import datetime
 import os
 import pandas as pd
 import numpy as np
 from models import BiLSTM, BiLSTM_CRF, BiLSTM_Attention
+from collections import Counter
 
 
 
@@ -17,7 +18,6 @@ class NERTrainer:
         device=device
         self.model = model
         self.optimizer = torch.optim.AdamW(model.parameters(), lr=config.lr)
-        self.criterion = nn.CrossEntropyLoss(ignore_index=label_vocab["O"])
         self.device = device
         self.epochs = config.max_epochs
         self.word_vocab = word_vocab
@@ -26,6 +26,9 @@ class NERTrainer:
         self.val_loader = DataLoader(val_data, batch_size=8, shuffle=False, collate_fn=self.collate_fn)
         self.num_classes = len(label_vocab)
         self.experiment_id = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+        class_weights = self.compute_class_weights(train_data, len(label_vocab), label_vocab["O"])
+        self.criterion = nn.CrossEntropyLoss(weight=class_weights.to(device), ignore_index=label_vocab["O"])
 
 
     def collate_fn(self, batch):
@@ -90,7 +93,6 @@ class NERTrainer:
                 all_preds.extend(preds.cpu().numpy())
                 all_labels.extend(labels.cpu().numpy())
 
-        # Compute metrics (excluding PAD)
         precision, recall, f1, accuracy = self.compute_metrics(all_preds, all_labels, self.label_vocab)
 
         print(f"Validation - Loss: {total_loss / len(self.val_loader):.4f}, "
@@ -133,6 +135,10 @@ class NERTrainer:
         true_labels = np.array(true_labels)
         pred_labels = np.array(pred_labels)
 
+        class_names = [label for label in label_vocab]
+        report = classification_report(true_labels, pred_labels, target_names=class_names, zero_division=0)
+        print(report)
+
         # Compute metrics
         precision = precision_score(true_labels, pred_labels, average="macro", zero_division=0)
         recall = recall_score(true_labels, pred_labels, average="macro", zero_division=0)
@@ -164,6 +170,26 @@ class NERTrainer:
             df.to_csv(log_path, mode="a", header=False, index=False)
         else:
             df.to_csv(log_path, index=False)
+
+
+    def compute_class_weights(self, data, num_classes, pad_idx):
+        """Compute inverse frequency weights for CrossEntropyLoss."""
+        counts = Counter()
+        for _, label_seq in data:
+            counts.update(label_seq)
+        
+        weights = []
+        for i in range(num_classes):
+            if i == pad_idx:
+                weights.append(0.0)  # Ignore PAD
+            else:
+                weights.append(1.0 / counts.get(i, 1))  # Avoid divide by zero
+        
+        # Normalize weights
+        weights = torch.tensor(weights, dtype=torch.float)
+        weights = weights / weights.sum() * num_classes
+        return weights
+
 
     def run(self):
         best_f1 = 0

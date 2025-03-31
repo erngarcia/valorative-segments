@@ -1,8 +1,6 @@
 import yaml
-from run_experiment import run_experiment
+from experiments.run_experiment import run_experiment
 import itertools
-
-
 
 def load_config(config_path):
     with open(config_path, "r") as file:
