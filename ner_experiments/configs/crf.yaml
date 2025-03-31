@@ -1,0 +1,2 @@
+# Inherits from base.yaml
+transition_lr: 0.01  # CRF transitions sometimes need higher LR 
