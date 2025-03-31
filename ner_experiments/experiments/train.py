@@ -168,6 +168,8 @@ class NERTrainer:
 
     def run(self):
         best_f1 = 0
+        patience = 5
+        epochs_no_improve = 0
         for epoch in range(self.epochs):
             train_loss = self.train_epoch()
             val_metrics = self.validate()
@@ -179,4 +181,10 @@ class NERTrainer:
 
             if val_metrics["f1"] > best_f1:
                 best_f1 = val_metrics["f1"]
-                # torch.save(self.model.state_dict(), f"artifacts/best_model_{self.experiment_id}.pt")
+                epochs_no_improve = 0
+            else:
+                epochs_no_improve += 1
+
+            if epochs_no_improve >= patience:
+                print(f"Early stopping triggered at epoch {epoch+1}")
+                break
