@@ -133,8 +133,16 @@ class NERTrainer:
         true_labels = np.array(true_labels)
         pred_labels = np.array(pred_labels)
 
-        class_names = [label for label in label_vocab]
-        report = classification_report(true_labels, pred_labels, target_names=class_names, zero_division=0)
+        idx_to_label = {idx: label for label, idx in label_vocab.items()}
+
+        pad_idx = label_vocab["<PAD>"]
+        class_names = [idx_to_label[i] for i in sorted(idx_to_label) if i != pad_idx]
+
+        filtered_true = [t for t, p in zip(true_labels, pred_labels) if t != pad_idx]
+        filtered_pred = [p for t, p in zip(true_labels, pred_labels) if t != pad_idx]
+
+        report = classification_report(filtered_true, filtered_pred, target_names=class_names, zero_division=0)
+
         print(report)
 
         precision = precision_score(true_labels, pred_labels, average="macro", zero_division=0)

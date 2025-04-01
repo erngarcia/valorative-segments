@@ -19,9 +19,11 @@ class NERDataset(Dataset):
     def _build_vocabs(self):
         word_vocab = defaultdict(lambda: len(word_vocab))
         label_vocab = defaultdict(lambda: len(label_vocab))
+        
+        label_vocab["<PAD>"] = 0 
         word_vocab["<PAD>"] = 0
         word_vocab["<UNK>"] = 1
-        label_vocab["O"] = 0
+  
         # Add your vocabulary building logic
         return word_vocab, label_vocab
         
