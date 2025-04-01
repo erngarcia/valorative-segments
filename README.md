@@ -79,7 +79,7 @@ Metrics are saved to `results/experiments_log.csv` along with:
 This codebase supports the experiments for:
 
 **Title:** (TBD)
-**Authors:** Ernesto [Your Last Name], Adrián [Last Name], Valentina [Last Name]
+**Authors:** Luis Ernesto García Estrada, Adrián Vergara Heidke, Valentina Tretti Beckles
 **Conference:** SEPLN 2024
 
 ---
