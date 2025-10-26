@@ -1,0 +1,80 @@
+ Example 1
+Text: cuándo han protegido a un hombre cuando una mujer lo golpea sabes lo que la gente dice es maricón por no defenderse no es un hombre eso son casos que siempre se van a dar no importando si eres hombre o mujer no excluyas a los hombres porque eso no es igualdad también hay hombres asesinados por sus mujeres que no reciben justicia mujeres como ustedes no quieren igualdad sino que quieren ser superior a los hombres
+Prediction: [('cuándo', 'O'), ('han', 'O'), ('protegido', 'I-judgement'), ('a', 'I-judgement'), ('un', 'I-judgement'), ('hombre', 'I-judgement'), ('cuando', 'I-judgement'), ('una', 'O'), ('mujer', 'O'), ('lo', 'O'), ('golpea', 'O'), ('sabes', 'O'), ('lo', 'O'), ('que', 'O'), ('la', 'O'), ('gente', 'O'), ('dice', 'O'), ('es', 'O'), ('maricón', 'O'), ('por', 'O'), ('no', 'O'), ('defenderse', 'O'), ('no', 'O'), ('es', 'O'), ('un', 'O'), ('hombre', 'O'), ('eso', 'O'), ('son', 'O'), ('casos', 'O'), ('que', 'O'), ('siempre', 'O'), ('se', 'O'), ('van', 'O'), ('a', 'O'), ('dar', 'O'), ('no', 'O'), ('importando', 'O'), ('si', 'O'), ('eres', 'O'), ('hombre', 'O'), ('o', 'O'), ('mujer', 'O'), ('no', 'O'), ('excluyas', 'O'), ('a', 'O'), ('los', 'O'), ('hombres', 'O'), ('porque', 'O'), ('eso', 'O'), ('no', 'O'), ('es', 'O'), ('igualdad', 'O'), ('también', 'O'), ('hay', 'O'), ('hombres', 'O'), ('asesinados', 'O'), ('por', 'O'), ('sus', 'O'), ('mujeres', 'O'), ('que', 'O'), ('no', 'O'), ('reciben', 'O'), ('justicia', 'O'), ('mujeres', 'O'), ('como', 'O'), ('ustedes', 'O'), ('no', 'I-judgement'), ('quieren', 'I-judgement'), ('igualdad', 'I-judgement'), ('sino', 'I-judgement'), ('que', 'I-judgement'), ('quieren', 'I-judgement'), ('ser', 'I-judgement'), ('superior', 'I-judgement'), ('a', 'I-judgement'), ('los', 'I-judgement'), ('hombres', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 2
+Text: de dónde sacaste ese caso de de cada niñas sufren algún tipo de abuso sexual dijiste que no los incriminaron por falta de pruebas en mi opinión eso no tiene tanto sentido ya que con los testimonios y las pruebas realizadas en españa es suficiente para meter a la cárcel a un sujeto
+Prediction: [('de', 'O'), ('dónde', 'O'), ('sacaste', 'O'), ('ese', 'O'), ('caso', 'O'), ('de', 'O'), ('de', 'O'), ('cada', 'O'), ('niñas', 'O'), ('sufren', 'O'), ('algún', 'O'), ('tipo', 'O'), ('de', 'O'), ('abuso', 'O'), ('sexual', 'O'), ('dijiste', 'O'), ('que', 'O'), ('no', 'O'), ('los', 'I-judgement'), ('incriminaron', 'I-judgement'), ('por', 'I-judgement'), ('falta', 'I-judgement'), ('de', 'I-judgement'), ('pruebas', 'I-judgement'), ('en', 'I-judgement'), ('mi', 'I-judgement'), ('opinión', 'I-judgement'), ('eso', 'I-judgement'), ('no', 'I-judgement'), ('tiene', 'I-judgement'), ('tanto', 'I-judgement'), ('sentido', 'I-judgement'), ('ya', 'I-judgement'), ('que', 'I-judgement'), ('con', 'I-judgement'), ('los', 'I-judgement'), ('testimonios', 'I-judgement'), ('y', 'I-judgement'), ('las', 'I-judgement'), ('pruebas', 'I-judgement'), ('realizadas', 'I-judgement'), ('en', 'I-judgement'), ('españa', 'I-judgement'), ('es', 'I-judgement'), ('suficiente', 'I-judgement'), ('para', 'I-judgement'), ('meter', 'I-judgement'), ('a', 'I-judgement'), ('la', 'I-judgement'), ('cárcel', 'I-judgement'), ('a', 'I-judgement'), ('un', 'I-judgement'), ('sujeto', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 3
+Text: tú abogado fuese pésimo y por eso perdieses la demanda ya que tenías todas las de ganar si lo que dices es verídico
+Prediction: [('tú', 'B-judgement'), ('abogado', 'I-judgement'), ('fuese', 'I-judgement'), ('pésimo', 'I-judgement'), ('y', 'I-judgement'), ('por', 'I-judgement'), ('eso', 'I-judgement'), ('perdieses', 'I-judgement'), ('la', 'I-judgement'), ('demanda', 'I-judgement'), ('ya', 'I-judgement'), ('que', 'I-judgement'), ('tenías', 'I-judgement'), ('todas', 'I-judgement'), ('las', 'I-judgement'), ('de', 'I-judgement'), ('ganar', 'I-judgement'), ('si', 'I-judgement'), ('lo', 'I-judgement'), ('que', 'I-judgement'), ('dices', 'I-judgement'), ('es', 'I-judgement'), ('verídico', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 4
+Text: tonterías a parte ni a mí ni a cualquier persona con un poco de cabeza se le ocurriría culpar a los hombres de contraer y contagiar el coronavirus por el hecho de que mueran más hombres que mujeres al infectarse del mismo
+Prediction: [('tonterías', 'O'), ('a', 'O'), ('parte', 'I-judgement'), ('ni', 'I-judgement'), ('a', 'I-judgement'), ('mí', 'I-judgement'), ('ni', 'I-judgement'), ('a', 'I-judgement'), ('cualquier', 'I-judgement'), ('persona', 'I-judgement'), ('con', 'I-judgement'), ('un', 'I-judgement'), ('poco', 'I-judgement'), ('de', 'I-judgement'), ('cabeza', 'I-judgement'), ('se', 'I-judgement'), ('le', 'I-judgement'), ('ocurriría', 'I-judgement'), ('culpar', 'I-judgement'), ('a', 'I-judgement'), ('los', 'I-judgement'), ('hombres', 'I-judgement'), ('de', 'I-judgement'), ('contraer', 'I-judgement'), ('y', 'I-judgement'), ('contagiar', 'I-judgement'), ('el', 'I-judgement'), ('coronavirus', 'I-judgement'), ('por', 'I-judgement'), ('el', 'I-judgement'), ('hecho', 'I-judgement'), ('de', 'I-judgement'), ('que', 'I-judgement'), ('mueran', 'I-judgement'), ('más', 'I-judgement'), ('hombres', 'I-judgement'), ('que', 'I-judgement'), ('mujeres', 'I-judgement'), ('al', 'I-judgement'), ('infectarse', 'I-judgement'), ('del', 'I-judgement'), ('mismo', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 5
+Text: no pongas en mi boca ni en la boca de muchísimas otras mujeres que jamás hemos dicho comentarios tan deleznables como este
+Prediction: [('no', 'B-no_attitude'), ('pongas', 'O'), ('en', 'O'), ('mi', 'O'), ('boca', 'O'), ('ni', 'O'), ('en', 'O'), ('la', 'O'), ('boca', 'O'), ('de', 'O'), ('muchísimas', 'O'), ('otras', 'O'), ('mujeres', 'O'), ('que', 'O'), ('jamás', 'I-judgement'), ('hemos', 'I-judgement'), ('dicho', 'I-judgement'), ('comentarios', 'I-judgement'), ('tan', 'I-judgement'), ('deleznables', 'I-judgement'), ('como', 'I-judgement'), ('este', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 6
+Text: comentarios tan deleznables como este ni mucho menos para desprestigiar el movimiento feminista utilizando esa excusa para decirnos que estamos mal de la cabeza y que somos unas enfermas
+Prediction: [('comentarios', 'B-judgement'), ('tan', 'I-judgement'), ('deleznables', 'I-judgement'), ('como', 'I-judgement'), ('este', 'I-judgement'), ('ni', 'I-judgement'), ('mucho', 'I-judgement'), ('menos', 'I-judgement'), ('para', 'I-judgement'), ('desprestigiar', 'I-judgement'), ('el', 'I-judgement'), ('movimiento', 'I-judgement'), ('feminista', 'I-judgement'), ('utilizando', 'I-judgement'), ('esa', 'I-judgement'), ('excusa', 'I-judgement'), ('para', 'I-judgement'), ('decirnos', 'I-judgement'), ('que', 'I-judgement'), ('estamos', 'I-judgement'), ('mal', 'I-judgement'), ('de', 'I-judgement'), ('la', 'I-judgement'), ('cabeza', 'I-judgement'), ('y', 'I-judgement'), ('que', 'I-judgement'), ('somos', 'I-judgement'), ('unas', 'I-judgement'), ('enfermas', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 7
+Text: no pero tú porque hayas escuchado disparates de una parte mínima del colectivo ya te crees con el derecho de llamarme a mí y a muchas otras mujeres enfermas
+Prediction: [('no', 'O'), ('pero', 'O'), ('tú', 'O'), ('porque', 'I-judgement'), ('hayas', 'I-judgement'), ('escuchado', 'I-judgement'), ('disparates', 'I-judgement'), ('de', 'I-judgement'), ('una', 'I-judgement'), ('parte', 'I-judgement'), ('mínima', 'I-judgement'), ('del', 'I-judgement'), ('colectivo', 'I-judgement'), ('ya', 'I-judgement'), ('te', 'I-judgement'), ('crees', 'I-judgement'), ('con', 'I-judgement'), ('el', 'I-judgement'), ('derecho', 'I-judgement'), ('de', 'I-judgement'), ('llamarme', 'I-judgement'), ('a', 'I-judgement'), ('mí', 'I-judgement'), ('y', 'I-judgement'), ('a', 'I-judgement'), ('muchas', 'I-judgement'), ('otras', 'I-judgement'), ('mujeres', 'I-judgement'), ('enfermas', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 8
+Text: viola los violadores y los hay hombres y los hay mujeres ellas menos y más en los casos de niños pq a la inversa pasan también
+Prediction: [('viola', 'B-no_attitude'), ('los', 'I-judgement'), ('violadores', 'I-judgement'), ('y', 'O'), ('los', 'O'), ('hay', 'O'), ('hombres', 'O'), ('y', 'O'), ('los', 'O'), ('hay', 'O'), ('mujeres', 'O'), ('ellas', 'O'), ('menos', 'O'), ('y', 'O'), ('más', 'O'), ('en', 'O'), ('los', 'O'), ('casos', 'O'), ('de', 'O'), ('niños', 'O'), ('pq', 'O'), ('a', 'O'), ('la', 'O'), ('inversa', 'O'), ('pasan', 'O'), ('también', 'O')]
+--------------------------------------------------------------------------------
+ Example 9
+Text: en eeuu más de de hombre son violados en las cárceles y tristemente y lo dice las estadísticas
+Prediction: [('en', 'B-appreciation'), ('eeuu', 'I-appreciation'), ('más', 'I-appreciation'), ('de', 'I-appreciation'), ('de', 'I-appreciation'), ('hombre', 'I-appreciation'), ('son', 'I-appreciation'), ('violados', 'I-appreciation'), ('en', 'I-appreciation'), ('las', 'I-appreciation'), ('cárceles', 'I-appreciation'), ('y', 'I-appreciation'), ('tristemente', 'I-appreciation'), ('y', 'I-appreciation'), ('lo', 'I-appreciation'), ('dice', 'I-appreciation'), ('las', 'I-appreciation'), ('estadísticas', 'I-appreciation')]
+--------------------------------------------------------------------------------
+ Example 10
+Text: el gen el adn del hombre no tiene que ver con que sea un violador un hombre no viola
+Prediction: [('el', 'O'), ('gen', 'O'), ('el', 'O'), ('adn', 'O'), ('del', 'O'), ('hombre', 'O'), ('no', 'O'), ('tiene', 'O'), ('que', 'O'), ('ver', 'O'), ('con', 'O'), ('que', 'O'), ('sea', 'O'), ('un', 'O'), ('violador', 'O'), ('un', 'O'), ('hombre', 'O'), ('no', 'O'), ('viola', 'O')]
+--------------------------------------------------------------------------------
+ Example 11
+Text: yo creo que es la cancion más pelotuda que escuche en toda mi vida se supone que tienen que dar un mensaje para todos
+Prediction: [('yo', 'B-appreciation'), ('creo', 'I-appreciation'), ('que', 'I-appreciation'), ('es', 'I-appreciation'), ('la', 'I-appreciation'), ('cancion', 'I-appreciation'), ('más', 'I-appreciation'), ('pelotuda', 'I-appreciation'), ('que', 'I-appreciation'), ('escuche', 'I-appreciation'), ('en', 'I-appreciation'), ('toda', 'I-appreciation'), ('mi', 'I-appreciation'), ('vida', 'I-appreciation'), ('se', 'I-appreciation'), ('supone', 'I-appreciation'), ('que', 'I-appreciation'), ('tienen', 'I-appreciation'), ('que', 'I-appreciation'), ('dar', 'I-appreciation'), ('un', 'I-appreciation'), ('mensaje', 'I-appreciation'), ('para', 'I-appreciation'), ('todos', 'I-appreciation')]
+--------------------------------------------------------------------------------
+ Example 12
+Text: el termino feminazi no existe y no no me enojo que estes en desacuerdo con el feminismo
+Prediction: [('el', 'B-judgement'), ('termino', 'I-judgement'), ('feminazi', 'I-judgement'), ('no', 'O'), ('existe', 'O'), ('y', 'O'), ('no', 'O'), ('no', 'O'), ('me', 'O'), ('enojo', 'O'), ('que', 'I-appreciation'), ('estes', 'I-appreciation'), ('en', 'I-appreciation'), ('desacuerdo', 'I-appreciation'), ('con', 'I-appreciation'), ('el', 'I-appreciation'), ('feminismo', 'I-appreciation')]
+--------------------------------------------------------------------------------
+ Example 13
+Text: el problema viene cuando quieres denigrarlo y mofarte de ello
+Prediction: [('el', 'B-appreciation'), ('problema', 'I-appreciation'), ('viene', 'I-appreciation'), ('cuando', 'I-appreciation'), ('quieres', 'I-judgement'), ('denigrarlo', 'I-judgement'), ('y', 'I-judgement'), ('mofarte', 'I-judgement'), ('de', 'I-judgement'), ('ello', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 14
+Text: los violadores con insomnio se ven esto para dormir agusto
+Prediction: [('los', 'B-judgement'), ('violadores', 'I-judgement'), ('con', 'I-judgement'), ('insomnio', 'I-appreciation'), ('se', 'B-appreciation'), ('ven', 'I-appreciation'), ('esto', 'I-appreciation'), ('para', 'I-appreciation'), ('dormir', 'I-appreciation'), ('agusto', 'I-appreciation')]
+--------------------------------------------------------------------------------
+ Example 15
+Text: literalmente estas diciendo que las matan por ser mujeres te das cuenta de lo estúpido que suena eso
+Prediction: [('literalmente', 'B-judgement'), ('estas', 'I-judgement'), ('diciendo', 'I-judgement'), ('que', 'I-judgement'), ('las', 'I-judgement'), ('matan', 'I-judgement'), ('por', 'I-judgement'), ('ser', 'I-judgement'), ('mujeres', 'I-judgement'), ('te', 'I-judgement'), ('das', 'I-judgement'), ('cuenta', 'I-judgement'), ('de', 'I-judgement'), ('lo', 'I-judgement'), ('estúpido', 'O'), ('que', 'O'), ('suena', 'O'), ('eso', 'O')]
+--------------------------------------------------------------------------------
+ Example 16
+Text: ustedes mismas denigran su genero inventándose esas mierdas
+Prediction: [('ustedes', 'B-judgement'), ('mismas', 'I-judgement'), ('denigran', 'I-judgement'), ('su', 'I-judgement'), ('genero', 'I-judgement'), ('inventándose', 'I-judgement'), ('esas', 'I-judgement'), ('mierdas', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 17
+Text: los machitos quieren aprovecharse de que son mujeres para violarlas
+Prediction: [('los', 'B-judgement'), ('machitos', 'I-judgement'), ('quieren', 'I-judgement'), ('aprovecharse', 'I-judgement'), ('de', 'I-judgement'), ('que', 'I-judgement'), ('son', 'I-judgement'), ('mujeres', 'I-judgement'), ('para', 'I-judgement'), ('violarlas', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 18
+Text: no me jodas violación es violación no importa si es mujer o no
+Prediction: [('no', 'B-judgement'), ('me', 'I-judgement'), ('jodas', 'I-judgement'), ('violación', 'I-judgement'), ('es', 'I-judgement'), ('violación', 'I-judgement'), ('no', 'I-judgement'), ('importa', 'I-judgement'), ('si', 'I-judgement'), ('es', 'I-judgement'), ('mujer', 'I-judgement'), ('o', 'I-judgement'), ('no', 'I-judgement')]
+--------------------------------------------------------------------------------
+ Example 19
+Text: un violador es una persona enferma y no le importara si su victima es mujer niño un adolescente etc
+Prediction: [('un', 'B-judgement'), ('violador', 'I-judgement'), ('es', 'I-judgement'), ('una', 'I-judgement'), ('persona', 'I-judgement'), ('enferma', 'I-judgement'), ('y', 'I-judgement'), ('no', 'I-judgement'), ('le', 'I-judgement'), ('importara', 'I-judgement'), ('si', 'I-judgement'), ('su', 'I-judgement'), ('victima', 'I-judgement'), ('es', 'I-judgement'), ('mujer', 'I-judgement'), ('niño', 'I-judgement'), ('un', 'I-judgement'), ('adolescente', 'O'), ('etc', 'O')]
+--------------------------------------------------------------------------------
+ Example 20
+Text: esa chica se emborracho en una discoteca y pendejos aprovecharon para violarla
+Prediction: [('esa', 'B-appreciation'), ('chica', 'I-appreciation'), ('se', 'I-appreciation'), ('emborracho', 'I-appreciation'), ('en', 'I-appreciation'), ('una', 'I-appreciation'), ('discoteca', 'I-appreciation'), ('y', 'I-appreciation'), ('pendejos', 'I-appreciation'), ('aprovecharon', 'I-appreciation'), ('para', 'I-appreciation'), ('violarla', 'I-appreciation')]
+--------------------------------------------------------------------------------

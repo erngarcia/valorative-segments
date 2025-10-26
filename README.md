@@ -4,7 +4,7 @@ This repository supports the experiments described in our SEPLN 2024 paper on au
 
 ---
 
-## 🧠 Task Overview
+## Task Overview
 The task is formulated as a **sequence labeling problem** where each token in a YouTube comment is tagged as part of a valorative segment (B-, I-) or background (O). Labels correspond to appraisal types: `B-judgement`, `I-affect`, etc.
 
 We evaluate several neural architectures:
@@ -14,7 +14,7 @@ We evaluate several neural architectures:
 
 ---
 
-## 📁 Repo Structure
+## Repo Structure
 
 ```
 ner_experiments/
@@ -30,7 +30,7 @@ ner_experiments/
 
 ---
 
-## 🚀 Running a Single Experiment
+## Running a Single Experiment
 
 ```bash
 python main.py
@@ -51,7 +51,7 @@ run_experiment(hparams, experiment_number=1)
 
 ---
 
-## 🔁 Running Multiple Experiments
+## Running Multiple Experiments
 
 ```bash
 python sweep_experiments.py
@@ -61,7 +61,7 @@ You can customize the hyperparameter search space in `sweep_experiments.py`.
 
 ---
 
-## 🧪 Metrics Logged
+## Metrics Logged
 After each validation step:
 - Precision
 - Recall
@@ -75,19 +75,19 @@ Metrics are saved to `results/experiments_log.csv` along with:
 
 ---
 
-## 📚 Paper Information
+## Paper Information
 This codebase supports the experiments for:
 
-**Title:** (TBD)
+**Title:** An LSTM Approach to Appraisal Classification in YouTube Comments in Spanish
 **Authors:** Luis Ernesto García Estrada, Adrián Vergara Heidke, Valentina Tretti Beckles
-**Conference:** SEPLN 2024
+**Conference:** TBD
 
 ---
 
-## 📖 Citation
+## Citation
 TBD
 
 ---
 
-## ✍️ License
+## License
 MIT License

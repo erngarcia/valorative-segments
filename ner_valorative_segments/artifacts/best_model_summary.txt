@@ -1,0 +1,25 @@
+Best Model Summary
+================================================================================
+Model: BiLSTM_Attention
+Best Hyperparameters:
+   - lr: 0.0001
+   - batch_size: 32
+   - hidden_dim: 192
+   - dropout: 0.3
+
+Best Metrics:
+   - loss: 3.0361
+   - precision: 0.4646
+   - recall: 0.2959
+   - f1: 0.3421
+   - accuracy: 0.8276
+
+Confusion Matrix:
+   15	13	18	0	8	0	1	0
+   7	20502	20	738	5	117	4	15
+   15	192	71	85	4	14	3	3
+   0	2123	9	1494	1	157	1	29
+   10	47	5	14	13	15	4	0
+   0	488	0	208	1	178	0	11
+   1	29	2	10	1	2	6	3
+   0	129	0	69	0	17	1	32

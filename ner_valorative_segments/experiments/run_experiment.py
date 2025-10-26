@@ -11,6 +11,7 @@ from experiments.train import NERTrainer
 from experiments.configs.configs import Config
 
 
+
 def load_config(config_path):
     with open(config_path, "r") as file:
         return yaml.safe_load(file)
@@ -43,6 +44,12 @@ def run_experiment(params, experiment_number):
     }
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+    
+    best_f1 = 0
+    best_model_name = None
+    best_trainer = None
+    best_errors = None
+
     for name, model in models.items():
         print(model.to(device))
         print(f'training {name} model')
@@ -57,3 +64,24 @@ def run_experiment(params, experiment_number):
             device=device
         )
         results = trainer.run()
+
+        if results['best_f1'] > best_f1:
+            best_f1 = results['best_f1']
+            best_model_name = name
+            best_matrix = results['confusion_matrix']
+            best_metrics = results['best_metrics']
+            best_errors = results['errors']
+            best_trainer = trainer
+            
+    return (
+        best_f1,
+        best_metrics,
+        best_matrix,
+        best_model_name,
+        best_errors,
+        best_trainer.model,
+        dataset,
+        dataset.word_vocab,
+        dataset.label_vocab
+    )
+

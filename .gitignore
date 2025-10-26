@@ -172,3 +172,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+#Dataset
+*.json
+ner_experiments/artifacts/experiments_log.csv
