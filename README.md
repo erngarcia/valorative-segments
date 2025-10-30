@@ -1,6 +1,6 @@
 # Valorative Segment Tagging with Neural Sequence Models
 
-This repository supports the experiments described in our 2024 paper on automatic appraisal detection in YouTube comments using BiLSTM-based models. We focus on the attitude domain of **Appraisal Theory** (Martin & White, 2005), with a special emphasis on the **affect**, **judgement**, and **appreciation** subcategories.
+This repository supports the experiments described in our 2025 paper on automatic appraisal detection in YouTube comments using BiLSTM-based models. We focus on the attitude domain of **Appraisal Theory** (Martin & White, 2005), with a special emphasis on the **affect**, **judgement**, and **appreciation** subcategories.
 
 ---
 
