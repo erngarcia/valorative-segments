@@ -15,7 +15,7 @@ We evaluate several neural architectures:
 ---
 
 ## Repo Structure
-
+```
 ner_valorative_segments/
 ├── experiments/
 │   ├── configs/              # YAML experiment configurations
@@ -30,6 +30,7 @@ ner_valorative_segments/
 ├── artifacts/                # Created automatically during experiments
 └── main.py                   # CLI entry point
 
+```
 
 ## Running a Single Experiment
 
@@ -70,12 +71,12 @@ After each validation step:
 - Accuracy
 
 Results and artifacts are stored automatically under:
-
+```
 artifacts/
 ├── summary_<timestamp>.txt
 ├── errors_<timestamp>.json
 └── sample_predictions_<timestamp>.txt
-
+```
 
 ## Paper Information
 This codebase supports the experiments for:
