@@ -37,17 +37,20 @@ ner_valorative_segments/
 
 The main script supports command-line arguments via argparse:
 
+´´´
 python -m ner_valorative_segments.main \
     --lr 1e-3 1e-4 \
     --batch_size 16 32 \
     --hidden_dim 128 192 \
     --dropout 0.3 \
     --device cuda
+´´´
 
 All arguments are optional; the defaults perform a small grid search.
 
 ### 2. Programmatic Execution
 
+´´´
 from ner_valorative_segments.experiments.run_experiment import run_experiment
 
 hparams = {
@@ -57,6 +60,7 @@ hparams = {
     "dropout": 0.3
 }
 run_experiment(hparams, experiment_number=1)
+´´´
 
 ## Metrics Logged
 After each validation step:
