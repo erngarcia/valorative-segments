@@ -16,52 +16,47 @@ We evaluate several neural architectures:
 
 ## Repo Structure
 
-```
 ner_valorative_segments/
-├── experiments/        # Config management and training loops
-│   ├── configs/
-│   ├── run_experiment.py
-│   └── train.py
-├── models/             # BiLSTM, CRF and attention encoders
-├── preprocessing/      # Dataset and vocabulary utilities
-├── data/               # Sample corpus for quick smoke tests
-├── artifacts/          # Metrics and diagnostic outputs (created at runtime)
-├── main.py             # Entry point for grid-search style experiments
-└── scripts/            # Auxiliary utilities
-```
+├── experiments/
+│   ├── configs/              # YAML experiment configurations
+│   ├── run_experiment.py     # Single experiment logic
+│   ├── grid_search.py        # Hyperparameter sweeps
+│   ├── artifacts.py          # Saving metrics, predictions, and summaries
+│   └── train.py              # Training and evaluation loop
+├── models/                   # BiLSTM, CRF, and Attention architectures
+├── preprocessing/            # Dataset and vocabulary utilities
+├── scripts/                  # Auxiliary tools (e.g., label distribution analysis)
+├── data/                     # Sample corpus for smoke tests
+├── artifacts/                # Created automatically during experiments
+└── main.py                   # CLI entry point
 
----
 
 ## Running a Single Experiment
 
-```bash
-python main.py
-```
+### 1. Command-Line Execution
 
-To run a programmatic experiment (for sweep or script usage):
-```python
-from main import run_experiment
+The main script supports command-line arguments via argparse:
+
+python -m ner_valorative_segments.main \
+    --lr 1e-3 1e-4 \
+    --batch_size 16 32 \
+    --hidden_dim 128 192 \
+    --dropout 0.3 \
+    --device cuda
+
+All arguments are optional; the defaults perform a small grid search.
+
+### 2. Programmatic Execution
+
+from ner_valorative_segments.experiments.run_experiment import run_experiment
+
 hparams = {
     "lr": 1e-4,
     "batch_size": 32,
     "hidden_dim": 192,
-    "dropout": 0.3,
-    "model_type": "BiLSTM"
+    "dropout": 0.3
 }
 run_experiment(hparams, experiment_number=1)
-```
-
----
-
-## Running Multiple Experiments
-
-```bash
-python sweep_experiments.py
-```
-
-You can customize the hyperparameter search space in `sweep_experiments.py`.
-
----
 
 ## Metrics Logged
 After each validation step:
@@ -70,12 +65,13 @@ After each validation step:
 - F1 Score
 - Accuracy
 
-Metrics are saved to `results/experiments_log.csv` along with:
-- Timestamp
-- Model type
-- Hyperparameters
+Results and artifacts are stored automatically under:
 
----
+artifacts/
+├── summary_<timestamp>.txt
+├── errors_<timestamp>.json
+└── sample_predictions_<timestamp>.txt
+
 
 ## Paper Information
 This codebase supports the experiments for:
