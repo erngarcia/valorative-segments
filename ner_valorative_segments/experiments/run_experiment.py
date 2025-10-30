@@ -21,8 +21,10 @@ def run_experiment(params, experiment_number):
     config_path = os.path.join(os.path.dirname(__file__), "configs", "base.yaml")
     config_dict = load_config(config_path)
 
-    config = Config(config_dict)  # Convert dictionary to object
-    config_dict.update(params)
+    if params:
+        config_dict.update(params)
+
+    config = Config(config_dict)
 
     # Load the dataset
     dataset = NERDataset(config.data_path, config)
@@ -31,16 +33,17 @@ def run_experiment(params, experiment_number):
 
     # Set required parameters
     config.vocab_size = vocab_size
-    config.pad_idx = dataset.word_vocab["<PAD>"]  # FIXED pad_idx issue
+    config.word_pad_idx = dataset.word_vocab["<PAD>"]
+    config.label_pad_idx = dataset.label_vocab["<PAD>"]
 
     # Split dataset
     train_data, test_data = dataset.train_test_split()
 
     # Define models
     models = {
-        "BiLSTM": BiLSTM(config, num_classes, dataset.word_vocab, config.pad_idx),
-        "BiLSTM_CRF": BiLSTM_CRF(config, num_classes, dataset.word_vocab, config.pad_idx),
-        "BiLSTM_Attention": BiLSTM_Attention(config, num_classes, dataset.word_vocab, config.pad_idx),
+        "BiLSTM": BiLSTM(config, num_classes, dataset.word_vocab, config.word_pad_idx, config.label_pad_idx),
+        "BiLSTM_CRF": BiLSTM_CRF(config, num_classes, dataset.word_vocab, config.word_pad_idx, config.label_pad_idx),
+        "BiLSTM_Attention": BiLSTM_Attention(config, num_classes, dataset.word_vocab, config.word_pad_idx, config.label_pad_idx),
     }
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -72,6 +75,8 @@ def run_experiment(params, experiment_number):
             best_metrics = results['best_metrics']
             best_errors = results['errors']
             best_trainer = trainer
+
+        best_model = best_trainer.model if best_trainer else None
             
     return (
         best_f1,
@@ -79,7 +84,7 @@ def run_experiment(params, experiment_number):
         best_matrix,
         best_model_name,
         best_errors,
-        best_trainer.model,
+        best_model,
         dataset,
         dataset.word_vocab,
         dataset.label_vocab

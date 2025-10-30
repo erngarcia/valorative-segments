@@ -1,0 +1,246 @@
+{
+    "false_positives": [
+        [
+            "a",
+            "I-judgement",
+            "O",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "no",
+            "I-judgement",
+            "B-judgement",
+            "no por que piñera de chile más asesino de la historia después de pinochet y no solo con las feministas con los jóvenes revolucionarios también"
+        ],
+        [
+            "que",
+            "I-judgement",
+            "B-affect",
+            "que vergüenza me da esto y lo peor es que soy chileno"
+        ],
+        [
+            "me",
+            "I-judgement",
+            "I-affect",
+            "que vergüenza me da esto y lo peor es que soy chileno"
+        ],
+        [
+            "que",
+            "I-judgement",
+            "O",
+            "que vergüenza me da esto y lo peor es que soy chileno"
+        ],
+        [
+            "y",
+            "I-judgement",
+            "O",
+            "y casualmente tu eres hombre estas en contrá del feminismo jajsjsj que loco si fueras mujer un día seria feminista ya"
+        ],
+        [
+            "que",
+            "I-judgement",
+            "B-judgement",
+            "y casualmente tu eres hombre estas en contrá del feminismo jajsjsj que loco si fueras mujer un día seria feminista ya"
+        ],
+        [
+            "el",
+            "I-judgement",
+            "B-appreciation",
+            "el shitpost es humor si no te gusta bueno tómalo como quieras si les pagarán menos solo contratarían mujeres o una cantidad ínfima de hombres y nadie les obliga a seguir los estereotipo de belleza es una decisión suya no es como si hubiera alguien con un arma apuntando y diciendote depilate ahora no osea es cosa suya ustedes son quienes deciden o no seguir esos estereotipos de hecho no son más propensas a sufrir todo tipo de violencia excepto las de caracter sexual aparte de esas el hombre sufre más más hombres asesinados más hombres asaltados etc"
+        ],
+        [
+            "a",
+            "I-judgement",
+            "I-appreciation",
+            "yo solo vengo a bailar tu solo sigue bajando"
+        ],
+        [
+            "que",
+            "I-judgement",
+            "I-appreciation",
+            "además de que esa canción no te hace ningún daño si salen a pintar está mal si cantan está mal todo está mal para ustedes"
+        ],
+        [
+            "canción",
+            "I-judgement",
+            "I-appreciation",
+            "además de que esa canción no te hace ningún daño si salen a pintar está mal si cantan está mal todo está mal para ustedes"
+        ],
+        [
+            "se",
+            "I-judgement",
+            "O",
+            "ni canserbero se ánimo a sacar tantas barras"
+        ],
+        [
+            "a",
+            "I-judgement",
+            "O",
+            "ni canserbero se ánimo a sacar tantas barras"
+        ],
+        [
+            "el",
+            "I-judgement",
+            "B-no_attitude",
+            "el feminismo no significa violencia al estado querian igualdad de genero se les dio que no se le pege a las mujeres eso es ovbio pero ellas a los hombres esta bien por supuesto macho opresor cuando ay una muerta hacen como marchas pero a un chico hombre ni el loro ya se les dio el aborto legal y eso no significa cuando alla marcha golpear generar violencia a policias muneres o hombres ellos hacen su trabajo y por culpa de ellas algunos policias la pasan en el hospital en ves pasar con su familia la noche esto no es un texto copiado tengo y pienso mejor que todas esas o mejeres y no es de ignorante hablen bien no sean payasas y que me van a decir macho opresor o ignorante son puras idiotezes"
+        ],
+        [
+            "y",
+            "I-judgement",
+            "B-no_attitude",
+            "y la culpa no era mía ni donde estaba ni cómo vestía y la culpa no era mía ni donde estaba ni como vestía"
+        ],
+        [
+            "la",
+            "I-judgement",
+            "O",
+            "y la culpa no era mía ni donde estaba ni cómo vestía y la culpa no era mía ni donde estaba ni como vestía"
+        ],
+        [
+            "y",
+            "I-judgement",
+            "B-no_attitude",
+            "y no lo tuve yo es derecho y voluntad propia"
+        ],
+        [
+            "no",
+            "I-judgement",
+            "O",
+            "y no lo tuve yo es derecho y voluntad propia"
+        ],
+        [
+            "que",
+            "I-judgement",
+            "O",
+            "like si te importa bien poco lo que digan ve y haceme de comer"
+        ],
+        [
+            "de",
+            "I-judgement",
+            "I-appreciation",
+            "yo de río ya que solamente se hicieron meme jajajajajaja no me funeen porfa"
+        ]
+    ],
+    "false_negatives": [
+        [
+            "como",
+            "O",
+            "B-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "van",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "generalizar",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "si",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "lo",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "único",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "se",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "oye",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "es",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "el",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "violador",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "eres",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "tú",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "ellas",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "están",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "hablando",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "de",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "los",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "que",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ],
+        [
+            "son",
+            "O",
+            "I-judgement",
+            "pero a ver como van a generalizar si lo único que se oye es el violador eres tú ellas están hablando de los que son violadores imagínate que ahora siendo mujer y viene un y te viola claramente tú le querrías decir que la culpa no era tuya ni donde estabas ni como vestias el eras tú es como decir que nos llaman víctimas a todos solo por ser mujeres nada que ver y lo de la violación es más fácil que sea de hombre a hombre en el caso de mujer a hombre sería abuso sexual porque la mujer no puede tener erección para cometer una penetración es eso"
+        ]
+    ]
+}

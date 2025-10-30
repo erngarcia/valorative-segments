@@ -174,5 +174,4 @@ cython_debug/
 .pypirc
 
 #Dataset
-*.json
-ner_experiments/artifacts/experiments_log.csv
+

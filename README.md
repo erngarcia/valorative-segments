@@ -17,15 +17,17 @@ We evaluate several neural architectures:
 ## Repo Structure
 
 ```
-ner_experiments/
-├── configs/            # YAML hyperparameter configurations
-├── models/             # BiLSTM, CRF, Attention variants
-├── preprocessing/      # Tokenization, vocabulary, dataset loaders
-├── experiments/        # Training, validation, logging
-├── scripts/            # Sweeps, visualization, utilities
-├── results/            # Output metrics and checkpoints
-├── main.py             # Entry point for training a model
-└── sweep_experiments.py # Grid search over hyperparameters
+ner_valorative_segments/
+├── experiments/        # Config management and training loops
+│   ├── configs/
+│   ├── run_experiment.py
+│   └── train.py
+├── models/             # BiLSTM, CRF and attention encoders
+├── preprocessing/      # Dataset and vocabulary utilities
+├── data/               # Sample corpus for quick smoke tests
+├── artifacts/          # Metrics and diagnostic outputs (created at runtime)
+├── main.py             # Entry point for grid-search style experiments
+└── scripts/            # Auxiliary utilities
 ```
 
 ---
