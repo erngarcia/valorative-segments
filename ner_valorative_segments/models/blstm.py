@@ -9,8 +9,10 @@ class BiLSTM(BaseNERModel):
             hidden_size=config.hidden_dim,
             num_layers=config.num_layers,
             bidirectional=True,
-            dropout=config.dropout if config.num_layers > 1 else 0
+            dropout=config.dropout if config.num_layers > 1 else 0,
+            batch_first=True,
         )
+
         self.classifier = nn.Linear(2*config.hidden_dim, num_classes)
         self.num_classes = num_classes
         self.pad_idx = pad_idx

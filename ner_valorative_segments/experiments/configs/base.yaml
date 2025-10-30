@@ -11,4 +11,4 @@ patience: 5
 max_seq_len: 128
 vocab_size: 1
 pad_idx: 0
-data_path: "data/corpus.json"
+data_path: "data/annotated_corpus.json"
