@@ -71,7 +71,7 @@ def run_experiment(params, experiment_number):
 
     # Train and evaluate each model
     for name, model in models.items():
-        print(f"\n🧠 Training {name} model...\n")
+        print(f"\nTraining {name} model...\n")
         model.to(device)
 
         trainer = NERTrainer(
